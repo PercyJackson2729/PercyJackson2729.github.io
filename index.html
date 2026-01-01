@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Community Joy Stall</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
+
+
+<style>
+:root{
+  --cream:#faf7f2;
+  --warm-red:#8b2e2e;
+  --pine:#1f3d2b;
+  --gold:#d8b46a;
+  --text:#1c1c1c;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Inter, sans-serif;
+  color:var(--text);
+  background:
+    linear-gradient(rgba(250,247,242,.96),rgba(250,247,242,.96)),
+    url("images/background-texture.jpg");
+  background-size:cover;
+  overflow-x:hidden;
+}
+
+/* GLOBAL */
+section{
+  padding:80px 6vw;
+  position:relative;
+}
+
+h1,h2{
+  font-family:Playfair Display, serif;
+  font-weight:600;
+}
+
+h2{
+  font-size:clamp(2rem,4vw,2.8rem);
+  margin-bottom:20px;
+}
+
+p{
+  max-width:720px;
+  line-height:1.7;
+  color:#444;
+}
+
+.caption{
+  font-family:Caveat, cursive;
+  color:var(--warm-red);
+  font-size:1.2rem;
+}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  background:
+    linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
+    url("images/christmas-stall.jpg") center/cover no-repeat;
+  color:white;
+}
+
+.hero-content{
+  max-width:700px;
+}
+
+.hero h1{
+  font-size:clamp(2.5rem,6vw,4rem);
+}
+
+.hero p{
+  margin-top:20px;
+  color:#f2f2f2;
+}
+
+/* IMAGE BLOCK */
+.image-block{
+  margin-top:40px;
+}
+
+.image-block img{
+  width:100%;
+  border-radius:26px;
+  box-shadow:0 30px 80px rgba(0,0,0,.25);
+}
+
+/* MISSION */
+.mission{
+  background:
+    linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,.9)),
+    url("images/fireplace.jpg") center/cover no-repeat;
+}
+
+/* PRODUCTS */
+.products{
+  background:
+    linear-gradient(rgba(250,247,242,.94),rgba(250,247,242,.94)),
+    url("images/warm-lights.jpg") center/cover no-repeat;
+}
+
+.product{
+  display:flex;
+  gap:50px;
+  margin-bottom:80px;
+  align-items:center;
+}
+
+.product.reverse{
+  flex-direction:row-reverse;
+}
+
+.product img{
+  width:45%;
+  border-radius:24px;
+  box-shadow:0 25px 60px rgba(0,0,0,.2);
+}
+
+.product h3{
+  font-size:1.8rem;
+  margin-bottom:10px;
+}
+
+.price{
+  color:var(--warm-red);
+  font-weight:600;
+}
+
+/* TEAM */
+.team{
+  background:
+    linear-gradient(rgba(255,255,255,.95),rgba(255,255,255,.95)),
+    url("images/paper-texture.jpg");
+}
+
+.team-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:40px;
+  margin-top:50px;
+}
+
+.member img{
+  width:100%;
+  border-radius:20px;
+}
+
+.member h4{
+  margin-top:15px;
+  font-weight:600;
+}
+
+/* CONTACT */
+.contact{
+  background:
+    linear-gradient(rgba(31,61,43,.92),rgba(31,61,43,.92)),
+    url("images/christmas-tree.jpg") center/cover no-repeat;
+  color:white;
+}
+
+.contact a{
+  color:var(--gold);
+  text-decoration:none;
+  font-weight:500;
+}
+
+/* FOOTER */
+footer{
+  padding:60px 6vw;
+  background:#0f1f16;
+  color:#bbb;
+  text-align:center;
+  font-size:.9rem;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .product,.product.reverse{
+    flex-direction:column;
+  }
+  .product img{
+    width:100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Spreading Warmth,<br>One Smile at a Time</h1>
+    <p>
+      A student-run Christmas community stall dedicated to joy, sustainability,
+      and giving back.
+    </p>
+    <p class="caption">Project Day • 20 December 2025 • San Academy KKN</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section>
+  <h2>About Us</h2>
+  <p>
+    We are a group of students brought together by the belief that small,
+    intentional actions can create lasting warmth. This stall is not just about
+    food or crafts, but about presence, care, and community.
+  </p>
+
+  <div class="image-block">
+    <img src="images/team.jpg" alt="Team">
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="mission">
+  <h2>Our Mission</h2>
+  <p>
+    No plastic. Minimal waste. Maximum warmth.
+    <br><br>
+    Every choice we make reflects our commitment to sustainability,
+    simplicity, and respect for our surroundings. We replace excess with
+    intention, packaging with responsibility, and transactions with human
+    connection.
+  </p>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products">
+  <h2>What We’re Serving</h2>
+
+  <div class="product">
+    <img src="images/rose-milk.jpg">
+    <div>
+      <h3>Rose Milk</h3>
+      <p>Chilled, fragrant, and comforting.</p>
+      <div class="price">₹30</div>
+    </div>
+  </div>
+
+  <div class="product reverse">
+    <img src="images/gulab-jamun.jpg">
+    <div>
+      <h3>Gulab Jamun</h3>
+      <p>Soft, warm, and meant to be shared.</p>
+      <div class="price">₹30 (4 pieces)</div>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="images/veg-wrap.jpg">
+    <div>
+      <h3>Veg. Wrap</h3>
+      <p>Fresh, filling, and wholesome.</p>
+      <div class="price">₹40</div>
+    </div>
+  </div>
+
+  <div class="product reverse">
+    <img src="images/crafts.jpg">
+    <div>
+      <h3>Handicrafts & Lucky Draw</h3>
+      <p>Bookmarks, posters, stickers and surprise stationery gifts.</p>
+      <div class="price">from ₹5-60</div>
+    </div>
+  </div>
+
+<!-- TEAM -->
+<section class="team">
+  <h2>The Team</h2>
+
+  <div class="team-grid">
+    <div class="member">
+      <img src="images/shakthivel.jpg">
+      <h4>Shakthivel</h4>
+      <p>Vice President</p>
+      <p> An enthusiastic student leader who works towards <br> creating an holistic environment for the growth of real-life skills <br> in schools for students. He is just a chill event planner. </p> 
+    </div>
+
+    <div class="member">
+      <img src="images/ahamed.jpg">
+      <h4>Ahamed Bilal</h4>
+      <p>Aakash House Captain</p>
+      <p> A very calm and cool leader who lives up to his post <br> CAPTAIN, co-ordinating and organising students and peers alike in case <br> of events and culturals. He is also a very cool DJ artist.
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <h2>Contact Us</h2>
+  <p>
+    <a href="mailto:sshakthivel27@gmail.com">Email ID : sshakthivel27@gmail.com</a><br><br>
+    <a href="tel:9551380217">Contact No. : +91 9551380217</a>
+  </p>
+</section>
+
+
+
+<footer>
+  All proceeds go to charity • Built with care by students
+</footer>
+
+</body>
+</html>
